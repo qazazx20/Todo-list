@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <title>todo-list responsive</title>
+</head>
+
+<body>
+    <header>
+        <div id="weather">
+            <img class="weatherIcon" />
+            <div id="info">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div id="bored">
+            <span id="boredTitle">Try it today!</span>
+            <span></span>
+        </div>
+
+    </header>
+
+    <main>
+        <form>
+            <div id="toDoInput">
+                <input type="text" id="content" autofocus placeholder="What to do?" />
+                <button type="button" id="add"> + </button>
+            </div>
+
+            <div id="toDoCatalog">
+                <ul>
+                    <div id="catalog"></div>
+                </ul>
+            </div>
+        </form>
+        </div>
+    </main>
+</body>
+
+<script src="js/weather.js"></script>
+<script src="js/bored.js"></script>
+<script src="js/todo-list.js"></script>
+
+</html>

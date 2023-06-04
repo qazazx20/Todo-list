@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Pangolin', cursive;
+    background-color: #F0F4CD;
+    color: #005B4C;
+}
+
+header {
+    display: flex;
+    margin: 2% 10%;
+    justify-content: space-between;
+}
+
+@media (min-width: 1024px) {
+}
+
+@media all and (min-width:768px) and (max-width:1023px) {
+}
+
+@media all and (max-width:767px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    #weather {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin: 10% 0; 
+    }
+
+    #weather .weatherIcon {
+        width: 50%;
+    }
+
+    #weather #info span {
+        text-align: center;
+    }
+
+    #bored {
+        width: 100%;
+        margin: 10% 0;
+    }
+
+    #bored span {
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    main #toDoCatalog li button {
+
+        width: 20rem;
+
+    }
+    main #toDoInput {
+        width: 100%;
+    }
+
+    main #toDoInput #content {
+        width: 70%;
+    }
+
+    main #toDoInput #add {
+        width: 20%;
+    }
+
+    main #toDoCatalog li button {
+        width: 30%;
+    } 
+}
+
+/* weather */
+#weather {
+    display: inline-flex;
+}
+
+#weather #info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#weather #info span {
+    font-size: 1.7rem;
+}
+
+#weather #info span:nth-of-type(2) {
+    font-size: 2.5rem;
+}
+
+/* bored */
+#bored {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#bored #boredTitle {
+    font-size: 3.0rem;
+    font-weight: bold;
+}
+
+#bored span {
+    font-size: 2.5rem;
+}
+
+/* main ToDoList */
+main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+main form {
+    width: 80%;
+}
+
+main #toDoInput {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+main #toDoInput #content {
+    text-indent: 2%;
+    border-radius: 20px;
+    padding: 1%;
+    font-size: 2.0rem;
+    width: 90%;
+}
+
+main #toDoInput #add {
+    width: 5%;
+    cursor: pointer;
+    border: none;
+    height: 40px;
+    padding: 1%;
+    background-color: #ADB47C;
+}
+
+main #toDoCatalog {
+    margin: 2% 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ADB47C;
+    padding: 1%;
+    border-radius: 10px;
+}
+
+main #catalog {
+    background-color: #ADB47C;
+}
+
+main #toDoCatalog li {
+    font-size: 2.8rem;
+    list-style: none;
+    margin: 2%;
+    text-indent: 2%;
+    background-color: #DFF07F;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+main #toDoCatalog #catalog li.complete {
+    text-decoration: line-through;
+    color: rgba(37, 37, 38, 0.41);
+}
+
+main #toDoCatalog li button {
+    position: absolute;
+    right: 5%;
+    top: 20%;
+    width: 5%;
+    cursor: pointer;
+    border: none;
+    background-color: #F0F4CD;
+}
+
