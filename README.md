@@ -1,4 +1,4 @@
 # Todo-list
 
 
-https://qazazx20.github.io/Todolist/
+https://qazazx20.github.io/Todo-list/
