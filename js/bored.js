@@ -1,4 +1,4 @@
-const bored = document.querySelector("#bored span:nth-of-type(2)");
+const bored = document.querySelector("#bored span:last-child");
 
 const url = `http://www.boredapi.com/api/activity`;
 
